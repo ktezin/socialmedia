@@ -1,3 +1,10 @@
-export default function Home() {
-	return <main className="">Homepage</main>;
+import Posts from "./(home)/@posts/page";
+
+export default function Home({}) {
+	return (
+		<div className="p-6">
+			Homepage
+			<Posts />
+		</div>
+	);
 }
