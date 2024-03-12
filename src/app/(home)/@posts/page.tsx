@@ -1,7 +1,7 @@
 import Card from "@/components/card";
 import Image from "next/image";
 
-/* const fakePost = {
+const fakePost = {
 	text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem voluptates nobis illum, dicta, ea officiis aspernatur veritatis et ab voluptate expedita aliquid omnis. Totam minus quae assumenda consequuntur nisi.",
 	author: {
 		username: "johndoe",
@@ -19,13 +19,13 @@ import Image from "next/image";
 			username: "johndoe",
 		},
 	],
-	media: {
+	/*media: {
 		type: "image",
 		url: "/placeholder.jpg",
-	},
-}; */
+	},*/
+};
 
-const posts: any[] = [];
+const posts: any[] = [fakePost, fakePost, fakePost, fakePost];
 
 export default function Posts() {
 	return (
