@@ -25,11 +25,20 @@ const fakePost = {
 	},*/
 };
 
-const posts: any[] = [fakePost, fakePost, fakePost, fakePost];
+const posts: any[] = [
+	fakePost,
+	fakePost,
+	fakePost,
+	fakePost,
+	fakePost,
+	fakePost,
+	fakePost,
+	fakePost,
+];
 
 export default function Posts() {
 	return (
-		<div className="flex flex-col gap-2">
+		<div className="flex flex-col gap-2 p-4">
 			{posts.map((post, key) => (
 				<Card key={key}>
 					<div className="flex gap-2">

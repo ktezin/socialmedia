@@ -1,10 +1,7 @@
-import Posts from "./(home)/@posts/page";
+import { redirect } from "next/navigation";
 
 export default function Home({}) {
-	return (
-		<div className="p-6">
-			Homepage
-			<Posts />
-		</div>
-	);
+	redirect("/feed");
+
+	return <div className="p-6 ">Homepage</div>;
 }
