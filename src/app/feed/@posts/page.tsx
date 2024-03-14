@@ -1,4 +1,5 @@
 import Card from "@/components/card";
+import Post from "@/components/post";
 import Image from "next/image";
 
 const fakePost = {
@@ -19,10 +20,10 @@ const fakePost = {
 			username: "johndoe",
 		},
 	],
-	/*media: {
-		type: "image",
-		url: "/placeholder.jpg",
-	},*/
+	media: {
+		type: "",
+		url: "",
+	},
 };
 
 const posts: any[] = [
@@ -40,30 +41,7 @@ export default function Posts() {
 	return (
 		<div className="flex flex-col gap-2 p-4">
 			{posts.map((post, key) => (
-				<Card key={key}>
-					<div className="flex gap-2">
-						<span className="font-bold">{post.author.name}</span>
-						<span className="text-gray-400">@{post.author.username}</span>
-					</div>
-					<div>{post.text}</div>
-					{post.media && (
-						<div className="max-w-3xl py-2">
-							<Image
-								className="rounded-lg"
-								src={post.media.url}
-								alt="post img"
-								width={768}
-								height={320}
-							/>
-						</div>
-					)}
-					<div className="flex gap-2">
-						<span className="text-gray-400">{post.likes.length} Likes</span>
-						<span className="text-gray-400">
-							{post.comments.length} Comments
-						</span>
-					</div>
-				</Card>
+				<Post post={post} key={key} />
 			))}
 		</div>
 	);
