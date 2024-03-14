@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Explore() {
 	return (
-		<div className="p-6 ">
+		<div className="p-6 flex flex-col justify-center gap-16 h-full">
 			<Card>
 				<input type="text" placeholder="Search..." />
 			</Card>
