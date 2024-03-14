@@ -7,8 +7,8 @@ export default function Sidebar() {
 				<div className="border p-4 flex flex-col justify-center items-center rounded-lg hover:bg-slate-50">
 					<img
 						className="w-10 h-10 rounded-full"
-						src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-						alt="Rounded avatar"
+						src="/favicon.ico"
+						alt="Avatar"
 					/>
 					<span className="font-bold text-gray-700">John Doe</span>
 					<span className="text-gray-400">@johndoe</span>
