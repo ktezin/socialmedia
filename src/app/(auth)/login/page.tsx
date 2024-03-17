@@ -1,5 +1,6 @@
 import { FaGoogle } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
+import Link from "next/link";
 
 export default function LoginPage() {
 	return (
@@ -37,6 +38,15 @@ export default function LoginPage() {
 						<FaApple size={20} />
 					</button>
 				</div>
+				<span className="text-center">
+					If you don't have an account, you can register{" "}
+					<Link
+						href="/register"
+						className="font-bold hover:underline hover:underline-offset-2"
+					>
+						here
+					</Link>
+				</span>
 			</div>
 		</div>
 	);
